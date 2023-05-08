@@ -11,5 +11,11 @@ steps:
   commands:
   - dotnet publish
 trigger:
-  branch:
-  - main
+  event:
+  - cron
+  - custom
+  - push
+  - pull_request
+  - tag
+  - promote
+  - rollback
